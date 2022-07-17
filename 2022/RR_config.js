@@ -4,41 +4,41 @@ var config_data = `
   "page_title":"Rapid React",
   "elements":{
     "prematch": {
-      "Scouter Initials": {
+      "Iniciais do Scout": {
         "code":"s",
         "type":"scouter",
         "size":5,
         "maxSize":5,
         "required":"true"
       },
-      "Event":{
+      "Evento":{
         "code":"e",
         "type":"event",
-        "defaultValue":"2022ilpe",
+        "defaultValue":"2019brnov",
         "required":"true",
         "disabled":"true"
       },
-      "Match Level":{
+      "Fase da partida":{
         "code":"l",
         "type":"level",
         "choices":{
-          "qm":"Quals<br>",
-          "ef":"Eighth-Final<br>",
-          "qf":"Quarter-Final<br>",
-          "sf":"Semi-Final<br>",
+          "qm":"Qulificatórias<br>",
+          "ef":"Oitavas de final<br>",
+          "qf":"Quartas de final<br>",
+          "sf":"Semi final<br>",
           "f":"Final"
         },
         "defaultValue":"qm",
         "required":"true"
       },
-      "Match #":{
+      "Partida n°":{
         "code":"m",
         "type":"match",
         "min":1,
         "max":100,
         "required":"true"
       },
-     "Robot": {
+     "Posicao do time<br>na Driver Station": {
         "code":"r",
         "type":"robot",
         "choices":{
@@ -51,15 +51,15 @@ var config_data = `
         },
         "required":"true"
       },
-      "Team #": {
+      "Time n°": {
         "code":"t",
         "type":"team",
         "min":1,
         "max":99999
       },
-      "Auto Start Position": {
+      "Posição inicial do robô": {
         "code":"as",
-        "title": "Auto Start Position",
+        "title": "posicao inicial robo",
         "type":"field_image",
         "filename":"2022/field_image.png"
       }
@@ -70,34 +70,34 @@ var config_data = `
         "title": "Taxied?",
         "type":"bool"
       },
-      "Upper Cargo Scored": {
+      "Pontos na Upper Cargo": {
         "code":"au",
-        "title": "Uppoer Cargo Scored",
+        "title": "pontos upper cargo",
         "type":"counter"
       },
-      "Lower Cargo Scored": {
+      "Pontos na Lower Cargo": {
         "code":"al",
-        "title": "Lower Cargo Scored",
+        "title": "pontos lower cargo",
         "type":"counter"
       },
-      "Auto Aquired Cargo": {
+      "Pegou mais Cargo sozinho?": {
         "code":"ac",
-        "title": "Picked up more cargo?",
+        "title": "pegou cargo",
         "type":"bool"
       }
     },
     "teleop": {
-      "Upper Cargo Scored": {
+      "Pontos na Upper Cargo": {
         "code":"tu",
-        "title": "Uppoer Cargo Scored",
+        "title": "Upper Cargo Scored",
         "type":"counter"
       },
-      "Lower Cargo Scored": {
+      "Pontos na Lower Cargo": {
         "code":"tl",
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
-      "Was Defended": {
+      "Era de Defesa?": {
         "code":"wd",
         "title": "Was Defended",
         "type":"bool"
@@ -107,19 +107,19 @@ var config_data = `
         "title": "Wallbot?",
         "type":"bool"
       },
-      "Cargo Intake From": {
+      "Pegou Cargo de onde?": {
         "code":"cif",
         "title": "Cargo Intake From",
         "type":"radio",
         "choices":{
           "t":"Terminal<br>",
           "g":"Ground<br>",
-          "b":"Both<br>",
-          "x":"Not Attempted"
+          "b":"Ambos<br>",
+          "x":"Não tentou"
         },
         "defaultValue":"x"
       },
-      "Shooting Spot": {
+      "Local de tiro": {
         "code":"ss",
         "title": "Shooting Spot",
         "type":"field_image",
@@ -136,49 +136,49 @@ var config_data = `
           "2":"Mid<br>",
           "3":"High<br>",
           "4":"Traversal<br>",
-          "a":"Attempted but failed<br>",
-          "x":"Not attempted"
+          "a":"Tentou mas falhou<br>",
+          "x":"Não tentou"
         },
         "defaultValue":"x"
       },
-      "Started Climb before Endgame": {
+      "Começou a subir antes do Endgame?": {
         "code":"be",
         "title": "Started climb before EndGame",
         "type":"bool"
       },
-      "Num of Robots Climbed": {
+      "Número de robôs que subiram": {
         "code":"cn",
         "title": "# of alliance bots climbed",
         "type":"counter"
       }
     },
     "postmatch": {
-      "Driver Skill": {
+      "Habilidade do piloto": {
         "code":"ds",
         "title": "Driver Skill",
         "type":"radio",
         "choices":{
-          "n":"Not Effective<br>",
-          "a":"Average<br>",
-          "v":"Very Effective<br>",
-          "x":"Not Observed"
+          "n":"Inexperiente<br>",
+          "a":"Normal<br>",
+          "v":"Experiente<br>",
+          "x":"Não observado"
         },
         "defaultValue":"x"
       },
-      "Defense Rating": {
+      "Classificação de defesa": {
         "code":"dr",
         "title": "Defense Rating",
         "type":"radio",
         "choices":{
-          "b":"Below Average<br>",
-          "a":"Average<br>",
-          "g":"Good<br>",
-          "e":"Excellent<br>",
-          "x":"Did not play defense"
+          "b":"Inefetiva<br>",
+          "a":"Média<br>",
+          "g":"Boa<br>",
+          "e":"Excelente<br>",
+          "x":"Não jogou defesa"
         },
         "defaultValue":"x"
       },
-       "Strategically held enemy cargo during match?": {
+       "Coletou Cargo adversária estratégicamente<br>durante a partida?": {
         "code":"hc",
         "title": "Enemy Balls",
         "type":"bool"
@@ -188,44 +188,44 @@ var config_data = `
         "title": "Swerve drive?",
         "type":"bool"
       },
-       "Speed Rating": {
+       "Classificação de Velocidade": {
         "code":"sr",
         "title": "Speed Rating",
         "type":"radio",
         "choices":{
-          "1":"1 (slow)<br>",
+          "1":"1 (devagar)<br>",
           "2":"2<br>",
           "3":"3<br>",
           "4":"4<br>",
-          "5":"5 (fast)"
+          "5":"5 (rápido)"
         },
         "defaultValue":"3"
       },
-      "Died/Tipped": {
+      "Morreu/Tombou?": {
         "code":"d",
         "title": "Died/Tipped",
         "type":"bool"
       },
-      "Make good alliance partner?": {
+      "São bons parceiros de aliança?": {
         "code":"all",
         "title": "Make good alliance partner?",
         "type":"bool"
       },
-      "Comments": {
+      "Comentários": {
         "code":"co",
         "title": "Comments",
         "type":"text",
         "size":15,
         "maxSize":50
       },
-      "Confidence Rating": {
+      "Classificação de confiança": {
         "code":"cnf",
         "title": "Confidence Rating",
         "type":"radio",
         "choices":{
-          "v":"Very Confident<br>",
-          "a":"Average<br>",
-          "n":"Not Confident"
+          "v":"Muito confiante<br>",
+          "a":"Mediano<br>",
+          "n":"Pouco Confiante"
       },
        "defaultValue":"a"
     }
