@@ -1,0 +1,4 @@
+scouter,event,level,match,driveteam_pos,team,starting_pos,taxied,auto_upper_cargo,auto_lower_cargo,auto_collect_cargo,teleop_upper_cargo,teleop_lower_cargo,defense,wallbot,cargo_from,cargo_shots,climb,climb_early,total_alliance_climbed,pilot,defense_rating,enemy_cargo,swerve,speed,died_tiped,good_partners,comments,confidence
+s=td,e=2019brnov,l=qm,m=23,r=r1,t=234,as=70,at=Y,au=6,al=0,ac=N,tu=10,tl=1,wd=N,wbt=N,cif=g,ss=21@33@33@21@21@20@20@21@21@22@9@9@22@22@33@34@22@22@34,c=a,be=N,cn=0,ds=x,dr=x,hc=N,sd=N,sr=3,d=N,all=N,co=,cnf=a
+s=td,e=2019brnov,l=qm,m=24,r=b2,t=174,as=17,at=N,au=0,al=4,ac=Y,tu=0,tl=2,wd=Y,wbt=N,cif=b,ss=28@40@52,c=1,be=N,cn=2,ds=n,dr=g,hc=N,sd=N,sr=5,d=N,all=N,co=,cnf=a
+s=td,e=2019brnov,l=qm,m=30,r=b1,t=123,as=56,at=N,au=4,al=0,ac=N,tu=5,tl=0,wd=N,wbt=N,cif=t,ss=58@57@57@56@67@68@70@58@69@70@70,c=3,be=N,cn=0,ds=x,dr=a,hc=N,sd=N,sr=2,d=N,all=Y,co=comentario,cnf=a

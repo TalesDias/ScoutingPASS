@@ -1,6 +1,7 @@
 import cv2
+import numpy
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(-1)
 detector = cv2.QRCodeDetector()
 defaultFont = cv2.FONT_HERSHEY_SIMPLEX
 
@@ -11,7 +12,11 @@ vistos = []
 def detectQR():
     while True:
         _, img = cap.read()
-        #img_binary = cv2.threshold(img_grey, thresh, 255, cv2.THRESH_BINARY)[1]
+        
+        #evitando os primeiros frames vazios
+        if type(img) != numpy.ndarray:
+            continue
+
         data, bbox, _ = detector.detectAndDecode(img)
 
         if bbox is not None:
@@ -41,7 +46,7 @@ def detectQR():
             return None
 
 def insertOnSpreadsheet(val):
-    val = val.replace(";",",")
+    #TODO inserir header caso o arquivo esteja vazio
     with open(spreadsheetFile, "a+") as fd:
         fd.write(val)
         fd.write("\n")

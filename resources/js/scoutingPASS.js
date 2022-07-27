@@ -586,7 +586,9 @@ function getData() {
 					str=str+code+'=N'
 				}
 			} else {
-				str=str+code+'='+e.value.split(';').join('-')
+        arr = e.value.split(';')[0]
+        arr = arr.slice(1, arr.length-1).replaceAll(',', "@")
+				str=str+code+'='+arr
 			}
 		}
 	}
