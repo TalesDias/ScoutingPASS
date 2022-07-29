@@ -22,8 +22,7 @@ var config_data = `
         "code":"l",
         "type":"level",
         "choices":{
-          "qm":"Qulificatórias<br>",
-          "ef":"Oitavas de final<br>",
+          "qm":"Qualificatórias<br>",
           "qf":"Quartas de final<br>",
           "sf":"Semi final<br>",
           "f":"Final"
@@ -70,12 +69,12 @@ var config_data = `
         "title": "Taxied?",
         "type":"bool"
       },
-      "Pontos na Upper Cargo": {
+      "Acertos na Upper Cargo": {
         "code":"au",
         "title": "pontos upper cargo",
         "type":"counter"
       },
-      "Pontos na Lower Cargo": {
+      "Acertos na Lower Cargo": {
         "code":"al",
         "title": "pontos lower cargo",
         "type":"counter"
@@ -87,12 +86,12 @@ var config_data = `
       }
     },
     "teleop": {
-      "Pontos na Upper Cargo": {
+      "Acertos na Upper Cargo": {
         "code":"tu",
         "title": "Upper Cargo Scored",
         "type":"counter"
       },
-      "Pontos na Lower Cargo": {
+      "Acertos na Lower Cargo": {
         "code":"tl",
         "title": "Lower Cargo Scored",
         "type":"counter"
@@ -113,7 +112,7 @@ var config_data = `
         "type":"radio",
         "choices":{
           "t":"Terminal<br>",
-          "g":"Ground<br>",
+          "g":"Chão<br>",
           "b":"Ambos<br>",
           "x":"Não tentou"
         },
@@ -127,7 +126,7 @@ var config_data = `
       }
     },
     "endgame": {
-      "Climb": {
+      "Escalada": {
         "code":"c",
         "title": "Climb",
         "type":"radio",
@@ -178,15 +177,12 @@ var config_data = `
         },
         "defaultValue":"x"
       },
-       "Coletou Cargo adversária estratégicamente<br>durante a partida?": {
-        "code":"hc",
-        "title": "Enemy Balls",
-        "type":"bool"
-      },
-       "Swerve drive?": {
-        "code":"sd",
-        "title": "Swerve drive?",
-        "type":"bool"
+      "Penalidades da aliança":{
+        "code":"fa",
+        "type":"match",
+        "min":0,
+        "max":255,
+        "required":"true"
       },
        "Classificação de Velocidade": {
         "code":"sr",
@@ -195,20 +191,13 @@ var config_data = `
         "choices":{
           "1":"1 (devagar)<br>",
           "2":"2<br>",
-          "3":"3<br>",
-          "4":"4<br>",
-          "5":"5 (rápido)"
+          "3":"3 (rápido)"
         },
         "defaultValue":"3"
       },
-      "Morreu/Tombou?": {
+      "Foi de base/A mimir (Morreu/Tombou)?": {
         "code":"d",
         "title": "Died/Tipped",
-        "type":"bool"
-      },
-      "São bons parceiros de aliança?": {
-        "code":"all",
-        "title": "Make good alliance partner?",
         "type":"bool"
       },
       "Comentários": {
@@ -217,18 +206,7 @@ var config_data = `
         "type":"text",
         "size":15,
         "maxSize":50
-      },
-      "Classificação de confiança": {
-        "code":"cnf",
-        "title": "Confidence Rating",
-        "type":"radio",
-        "choices":{
-          "v":"Muito confiante<br>",
-          "a":"Mediano<br>",
-          "n":"Pouco Confiante"
-      },
-       "defaultValue":"a"
-    }
-    }
+      }
+    } 
   }
 }`;
